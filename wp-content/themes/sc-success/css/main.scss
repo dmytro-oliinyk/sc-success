@@ -1,0 +1,83 @@
+// Variable overrides first
+$primary: #000;
+$textSecondary: #7A7A7A;
+$lighter: #E7E7E7;
+$light: #FAFAFA;
+$accent: #f00;
+$prefix: "sc-";
+
+// Then import Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../fonts/stylesheet.css";
+@import "./header";
+@import "./footer";
+@import "./home";
+
+* {
+  font-family: 'HelveticaNeueCyr', sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+.icon {
+  display: block;
+  fill: black;
+  border: none;
+  background: none no-repeat center center / 100% 100%;
+
+  &.icon-phone {
+    width: 21px;
+    height: 21px;
+    background-image: url(/wp-content/themes/sc-success/images/icon-phone.svg);
+  }
+
+  &.icon-bag {
+    width: 24px;
+    height: 23px;
+    background-image: url(/wp-content/themes/sc-success/images/icon-bag.svg);
+  }
+
+  &.icon-menu {
+    width: 24px;
+    height: 24px;
+    background-image: url(/wp-content/themes/sc-success/images/icon-nav.svg);
+  }
+
+  &.icon-cross {
+    width: 14px;
+    height: 14px;
+    background-image: url(/wp-content/themes/sc-success/images/icon-cross.svg);
+  }
+
+  &.icon-search {
+    width: 26px;
+    height: 26px;
+    background-image: url(/wp-content/themes/sc-success/images/icon-search.svg);
+  }
+}
+
+main {
+  min-height: 200px;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+
+
+
